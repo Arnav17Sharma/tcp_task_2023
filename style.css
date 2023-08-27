@@ -1,0 +1,1021 @@
+@font-face {
+    font-family: Montserrat-light;
+    src: url(./assets/Montserrat-Light.ttf);
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(./assets/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: Montserrat-black;
+    src: url(./assets/Montserrat-Black.ttf);
+}
+@font-face {
+    font-family: Montserrat-bold;
+    src: url(./assets/Montserrat-Bold.ttf);
+}
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+    overflow-x: hidden;
+}
+
+body{
+    width: 100%;
+    background-color: #252B42;
+}
+
+.burger{
+    display: none;
+}
+
+.header{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo{
+    font-family: Montserrat-bold;
+    font-size: 24px;
+    color: #FFF;
+}
+.nav ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: #FFF;
+    margin-right: 20px;
+}
+
+.header-main{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
+.text-area{
+    margin-left: 7%;
+    margin-bottom: 30px;
+    width: fit-content;
+    height: 500px;
+}
+
+.text-1{
+    color: #23A6F0;
+    font-family: Montserrat-bold;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+
+.text-2{
+    color: #FFF;
+    font-family: Montserrat-bold;
+    font-size: 58px;
+    margin-bottom: 30px;
+}
+
+.p-2{
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+.con-2{
+    color: #FFF;
+    font-family: Montserrat-bold;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.line{
+    width: 25%;
+    height: 5px;
+    background-color: #E74040;
+    margin-bottom: 30px;
+}
+
+.con-1{
+    font-size: 12px;
+}
+
+.con-3{
+    color: #fff;
+    font-family: Montserrat-light;
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+
+.text-3{
+    color: #fff;
+    font-family: Montserrat-light;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.p-1, .p-3{
+    font-family: Montserrat;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+
+.buttons{
+    background-color: #23A6F0;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.button-2{
+    background-color: #252B42;
+    color: #23A6F0;
+    border: #23A6F0 solid 1px;
+    align-items: center;
+}
+
+.login{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.login .buttons{
+    color: #FFF;
+    padding: 5px 15px;
+}
+
+.login .button-2{
+    background-color: #252B42;
+    color: #23A6F0;
+    align-items: center;
+}
+
+.b-2{
+    background-color: #252B42;
+    color: #23A6F0;
+    border: none;
+    text-decoration: none;
+}
+
+
+.container-1{
+    margin-bottom: 10%;
+}
+
+.container-2{
+    margin-bottom: 10%;
+}
+
+.products, .clients{
+    justify-content: left;
+    padding: 5%;
+    display: block;
+    /* background-color: yellow; */
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.row-1{
+    height: fit-content;
+}
+
+.row-2{
+    /* background-color: red; */
+    width: 71rem;
+    height: auto;  /*TO BE MADE AUTO LATER*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cards{
+    width: 328px;
+    background-color: white;
+    margin-right: 20px;
+    align-items: center;
+}
+
+.details{
+    margin: 15px;
+    margin-top: 30px;
+}
+
+.dept-rating{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dept-rating p{
+    color: #23A6F0;
+    font-family: Montserrat-bold;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.rating{
+    background-color: #252B42;
+    width: 46px;
+    border-radius: 15px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+}
+
+.rating svg{
+    position: relative;
+    top: 5px;
+    left: 4px;
+}
+
+.rating p{
+    position: relative;
+    color: white;
+    font-family: Montserrat-light;
+    top: 5px;
+    margin-left: 6px;
+}
+
+
+
+.name p{
+    font-family: Montserrat-bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.description p {
+    font-family: Montserrat-light;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.downloads{
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.downloads svg{
+    width: 15px;
+    height: auto;
+}
+
+.downloads p{
+    margin-left: 4px;
+    color: #737373;
+    font-size: 12px;
+    font-family: Montserrat-bold;
+}
+
+.pricing{
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.pricing p{
+    font-size: 14px;
+    margin-right: 5px;
+    font-family: Montserrat-bold;
+}
+
+.original-price{
+    color: #BDBDBD;
+}
+
+.discounted-price{
+    color: #40BB15;
+}
+
+.extra-details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.extra-details div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.extra-details div p{
+    font-size: 12px;
+    margin-left: 4px;
+    font-family: Montserrat-light;
+}
+
+.learn-more{
+    border: 2px solid #23A6F0;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 18px;
+    margin-bottom: 10px;
+}
+
+.learn-more a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #23A6F0;
+    font-family: Montserrat-bold;
+}
+
+.new{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stars-desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+}
+
+.stars-desc p{
+    font-size: 16px;
+    color: #737373;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.client{
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.client-name {
+    margin-left: 10px;
+}
+
+.c-name{
+    font-size: 16px;
+    color: #23A6F0;
+    font-family: Montserrat-bold;
+}
+
+.c-position{
+    font-size: 12px;
+}
+
+.email-box{
+    border: 2px white solid;
+    background-color: #23A6F0;
+    width: auto;
+    height: auto;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 4px;
+    margin-bottom: 50px;
+}
+
+.email-box input{
+    padding: 7px;
+    border-radius: 4px;
+    width: 20rem;
+    border: none;
+}
+
+.email-box a{
+    text-decoration: none;
+    background-color: #23A6F0;
+    padding-left: 14px;
+    padding-right: 14px;
+    font-size: 12px;
+    color: white;
+}
+
+.main-footer{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer{
+    margin-top: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.head-text{
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: Montserrat-bold;
+    margin-left: 10px;
+}
+
+.socials{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    align-self: left;
+}
+
+.desc-t{
+    color: #737373;
+    font-size: 12px;
+}
+
+.socials li a{
+    text-decoration: none;
+    color: #737373;
+    margin: 10px;
+}
+
+.list-style li a{
+    text-decoration: none;
+    color: #737373;
+    margin: 10px;
+    font-family: Montserrat-bold;
+    font-size: 12px;
+    line-height: 30px;
+    text-align: left;
+}
+
+.container-23{
+    text-align: left;
+}
+
+.thanks-msg{
+    background-color: #FAFAFA;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.thanks-msg p{
+    font-family: Montserrat-bold;
+    color: #737373;
+    font-size: 12px;
+}
+
+
+@media screen and (max-width: 480px) {
+    .burger{
+        display: block;
+        margin-top: 5px;
+    }
+
+    .burger svg {
+        width: 18px;
+        height: auto;
+    }
+    .header{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .logo{
+        font-family: Montserrat-bold;
+        font-size: 24px;
+        color: #FFF;
+    }
+    .nav ul{
+        position: absolute;
+        left: 15px;
+        top: 40px;
+        background-color: #23A6F0;
+        padding: 15px;
+        display: none;
+    }
+    
+    .nav ul li a{
+        text-decoration: none;
+        color: #252B42;
+        margin-right: 10px;
+    }
+    
+    .header-main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-bottom: 20px;
+    }
+    
+    .text-area{
+        margin-left: 7%;
+        padding: 10px;
+        margin-bottom: 0px;
+        width: fit-content;
+        height: 260px;
+        text-align: center;
+    }
+    
+    .text-1{
+        color: #23A6F0;
+        font-family: Montserrat-bold;
+        font-weight: bold;
+        font-size: 10px;
+        margin-bottom: 15px;
+        margin-top: 20px;
+    }
+    
+    
+    .text-2{
+        color: #FFF;
+        font-family: Montserrat-bold;
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    
+    .p-2{
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    
+    .con-2{
+        color: #FFF;
+        font-family: Montserrat-bold;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    
+    .line{
+        width: 100%;
+        height: 5px;
+        background-color: #E74040;
+        margin-bottom: 15px;
+    }
+    
+    .con-1{
+        font-size: 10px;
+    }
+    
+    .con-3{
+        color: #fff;
+        font-family: Montserrat-light;
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+    
+    .text-3{
+        color: #fff;
+        font-family: Montserrat-light;
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .p-1, .p-3{
+        font-family: Montserrat;
+        margin-bottom: 10px;
+        font-size: 10px;
+    }
+
+    .products .text-area{
+        text-align: left;
+    }
+
+    .course-1, .course-2, .course-3{
+        width: 300px;
+        height: auto;
+    }
+
+    .container-1 .text-area, .container-2 .text-area{
+        height: 180px;
+        margin-bottom: 10px;
+    }   
+    
+    .container-2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .container-2 div:first-child {
+        order: 1;
+    }
+
+    
+    .buttons{
+        background-color: #23A6F0;
+        color: white;
+        padding: 5px 10px;
+        text-decoration: none;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        margin-right: 5px;
+        font-size: 12px;
+    }
+    
+    .button-2{
+        background-color: #252B42;
+        color: #23A6F0;
+        border: #23A6F0 solid 1px;
+        align-items: center;
+    }
+    
+    .login{
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .login .buttons{
+        color: #FFF;
+        padding: 5px 15px;
+    }
+    
+    .login .button-2{
+        background-color: #252B42;
+        color: #23A6F0;
+        align-items: center;
+    }
+    
+    .b-2{
+        background-color: #252B42;
+        color: #23A6F0;
+        border: none;
+        text-decoration: none;
+    }
+    
+    
+    .container-1{
+        margin-bottom: 10%;
+    }
+    
+    .container-2{
+        margin-bottom: 10%;
+    }
+    
+    .products, .clients{
+        justify-content: left;
+        padding: 0%;
+        display: block;
+        /* background-color: yellow; */
+    }
+    
+    .contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .row-1 div{
+        text-align: center;
+    }
+
+    .row-1{
+        height: fit-content;
+    }
+    
+    .row-2{
+        /* background-color: red; */
+        width: auto;
+        height: auto;  /*TO BE MADE AUTO LATER*/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .cards{
+        width: 250px;
+        background-color: white;
+        margin-right: 0px;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .imgp img{
+        width: 250px;
+        height: auto;
+    }
+    
+    .details{
+        margin: 15px;
+        margin-top: 30px;
+    }
+    
+    .dept-rating{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .dept-rating p{
+        color: #23A6F0;
+        font-family: Montserrat-bold;
+        margin-bottom: 10px;
+        font-size: 9px;
+    }
+    
+    .rating{
+        background-color: #252B42;
+        width: 40px;
+        border-radius: 15px;
+        font-size: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .rating svg{
+        position: relative;
+        top: 0px;
+        left: 2px;
+        width: 10px;
+        height: auto;
+    }
+    
+    .rating p{
+        position: relative;
+        color: white;
+        font-family: Montserrat-light;
+        top: 5px;
+        margin-left: 0px;
+    }
+    
+    
+    .name p{
+        font-family: Montserrat-bold;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    
+    .description p {
+        font-family: Montserrat-light;
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .downloads{
+        width: fit-content;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+    }
+    
+    .downloads svg{
+        width: 10px;
+        height: auto;
+    }
+    
+    .downloads p{
+        margin-left: 4px;
+        color: #737373;
+        font-size: 10px;
+        font-family: Montserrat-bold;
+    }
+    
+    .pricing{
+        width: fit-content;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+    }
+    
+    .pricing p{
+        font-size: 12px;
+        margin-right: 5px;
+        font-family: Montserrat-bold;
+    }
+    
+    .original-price{
+        color: #BDBDBD;
+    }
+    
+    .discounted-price{
+        color: #40BB15;
+    }
+    
+    .extra-details{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+    
+    .extra-details div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 10px;
+    }
+    
+    .extra-details div p{
+        font-size: 8px;
+        font-family: Montserrat-light;
+    }
+    
+    .learn-more{
+        border: 1px solid #23A6F0;
+        width: fit-content;
+        padding: 5px;
+        border-radius: 12px;
+        margin-bottom: 15px;
+    }
+    
+    .learn-more a{
+        font-size: 9px;
+        text-decoration: none;
+        color: #23A6F0;
+        font-family: Montserrat-bold;
+    }
+    
+    .new{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .stars-desc{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+    }
+    
+    .stars-desc p{
+        font-size: 10px;
+        color: #737373;
+        text-align: center;
+        margin-top: 20px;
+    
+    }
+    
+    .client{
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    
+    .client-name {
+        margin-left: 0px;
+    }
+
+    .client-photo img{
+        width: 30px;
+        height: auto;
+    }
+    
+    .c-name{
+        font-size: 8px;
+        color: #23A6F0;
+        font-family: Montserrat-bold;
+    }
+    
+    .c-position{
+        font-size: 6px;
+    }
+    
+    .email-box{
+        border: 1px white solid;
+        background-color: #23A6F0;
+        width: auto;
+        height: auto;
+        margin-left: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 4px;
+        margin-bottom: 50px;
+    }
+    
+    .email-box input{
+        padding: 7px;
+        border-radius: 4px;
+        width: 200px;
+        border: none;
+    }
+    
+    .email-box a{
+        text-decoration: none;
+        background-color: #23A6F0;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 12px;
+        color: white;
+    }
+    
+    .main-footer{
+        background-color: white;
+        width: 100%;
+        height: 60em;  /*TO BE FIXED LATER*/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer{
+        margin-top: 50px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    .head-text{
+        font-size: 24px;
+        margin-bottom: 5px;
+        font-family: Montserrat-bold;
+        margin-left: 10px;
+        text-align: center;
+    }
+    
+    .socials{
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+        margin-left: 35%;
+    }
+    
+    .desc-t{
+        color: #737373;
+        font-size: 12px;
+        text-align: center;
+    }
+    
+    .socials li a{
+        text-decoration: none;
+        color: #737373;
+        margin: 10px;
+    }
+    
+    .list-style li a{
+        text-decoration: none;
+        color: #737373;
+        margin: 10px;
+        font-family: Montserrat-bold;
+        font-size: 12px;
+        line-height: 25px;
+        text-align: center;
+    }
+    
+    .container-23{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .thanks-msg{
+        background-color: #FAFAFA;
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    
+    .thanks-msg p{
+        font-family: Montserrat-bold;
+        color: #737373;
+        font-size: 10px;
+    }
+}
